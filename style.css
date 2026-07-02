@@ -141,6 +141,8 @@ body.veil-enter #veil .veil-mark{
     transition:clip-path .6s var(--ease-in-out);
   }
   .nav-links.open{clip-path:circle(150% at calc(100% - 2.4rem) 2.2rem)}
+  body.menu-open{overflow:hidden;height:100dvh;touch-action:none}
+  .nav-links{overscroll-behavior:contain}
   body.menu-open .nav-burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
   body.menu-open .nav-burger span:nth-child(2){opacity:0}
   body.menu-open .nav-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
