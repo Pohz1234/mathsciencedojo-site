@@ -480,3 +480,24 @@ footer{border-top:1px solid var(--line);padding:3rem 0 2.2rem;margin-top:clamp(3
 .tcard blockquote::before{content:"\201C";color:var(--gold);font-size:1.5em;line-height:0;margin-right:.1em}
 .tcard figcaption{font-family:var(--font-mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:#5C6B62}
 .t-note{margin-top:2rem;text-align:center;font-family:var(--font-mono);font-size:.82rem;color:#5C6B62}
+
+/* ===================== tables ===================== */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.table-wrap{margin-top:2.2rem;overflow-x:auto;border:1px solid var(--line);border-radius:20px;background:#fff}
+.compare{width:100%;border-collapse:collapse;font-size:1rem;min-width:560px}
+.compare th,.compare td{padding:1.05rem 1.3rem;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.compare tbody tr:last-child th,.compare tbody tr:last-child td{border-bottom:0}
+.compare thead th{font-family:var(--font-mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#5C6B62;background:var(--paper-2)}
+.compare thead th.us{color:var(--paper);background:var(--pine)}
+.compare tbody th{font-weight:600;color:var(--pine);width:22%}
+.compare tbody td:nth-child(2){background:#F1F6EE;color:var(--pine);font-weight:500}
+.compare tbody td:nth-child(3){color:#5C6B62}
+.compare.rates{min-width:0}
+.compare.rates tbody td{font-family:var(--font-mono);font-weight:600;font-size:1.15rem}
+.compare.rates tbody td:nth-child(3){color:var(--pine)}
+.free-check{margin-top:2rem;display:flex;gap:1.5rem;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--pine);color:var(--paper);border-radius:22px;padding:1.8rem 2rem}
+.free-check h3{color:var(--paper);margin-bottom:.3rem}
+.free-check p{color:#D8E2D5;max-width:36em}
+.policy-list{list-style:none;padding:0;margin:1.5rem 0 0;display:grid;gap:.9rem}
+.policy-list li{padding:1rem 1.2rem;background:#fff;border:1px solid var(--line);border-radius:14px}
+.policy-list b{color:var(--pine)}

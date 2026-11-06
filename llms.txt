@@ -1,6 +1,6 @@
 # MathScienceDojo
 
-> Online PSLE Maths and Science tuition for Primary 5 and Primary 6 students in Singapore, taught personally by founder Mr Yeo (Yeo Juan Poh) in small live online classes.
+> Online PSLE Maths and Science tuition for students from Primary 3 to Secondary 2 in Singapore, taught personally by founder Mr Yeo (Yeo Juan Poh) in small live online classes.
 
 ## What we do
 Teaches PSLE Maths and Science to P5 and P6 students across Singapore, focusing on exam answering technique (keyword-based answers for Science open-ended questions, working presentation for Maths method marks) alongside concept mastery. Small classes so every student's working is reviewed each lesson.
@@ -12,6 +12,19 @@ Teaches PSLE Maths and Science to P5 and P6 students across Singapore, focusing 
 - Trial lesson: $10, book at https://buy.stripe.com/28E7sM9dO8IN0Iz3gk3ZK00
 - Free P5 Science notes: https://mathsciencedojo.com/#free-notes
 
+## How MathScienceDojo differs from a typical tuition centre
+- Taught by the founder, Mr Yeo, every lesson (no rotating tutors)
+- 1-1, or a group of at most 5 students
+- Lessons start from a diagnosis of the child's recent papers
+- Teaches the concept plus the answering technique the marking scheme rewards (the Marks-First Method)
+- Progress tracked in marks per paper
+- Pay per session, billed monthly; $10 trial first; live online
+
+## Policies
+- Classes usually weekdays 3pm-9pm and weekends 11am-8pm, timing agreed with Mr Yeo
+- Make-up lessons if notified at least 24 hours before class
+- Free paper check: send your child's latest paper on WhatsApp and Mr Yeo shows where marks leak
+
 ## Who teaches
 Every class is taught personally by Mr Yeo, the founder. He has classroom experience teaching primary science (P3–P6) and lower secondary science. There are no rotating tutors.
 
@@ -22,6 +35,7 @@ Primary 6 Science students have improved from failing or weak grades to strong p
 - Home: https://mathsciencedojo.com/
 - About Mr Yeo: https://mathsciencedojo.com/about.html
 - Programmes & Results: https://mathsciencedojo.com/programmes.html
+- Pricing: https://mathsciencedojo.com/pricing.html
 - Guide — 5 Reasons P6 Students Lose Marks in PSLE Science Open-Ended Questions: https://mathsciencedojo.com/psle-science-open-ended.html
 
 ## Contact
