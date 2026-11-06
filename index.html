@@ -88,7 +88,7 @@
       "name": "How do I enquire or book a trial?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Message Mr Yeo directly on WhatsApp at +65 8867 3474. You will get a personal reply, not a sales team."
+        "text": "Book a $10 trial lesson online from the website, or message Mr Yeo directly on WhatsApp at +65 8867 3474. You will get a personal reply, not a sales team."
       }
     }
   ]
@@ -107,6 +107,7 @@
     <li><a href="about.html">About Mr Yeo</a></li>
     <li><a href="programmes.html">Programmes &amp; Results</a></li>
     <li><a href="psle-science-open-ended.html">Free Guide</a></li>
+    <li><a href="#free-notes">Free notes</a></li>
     <li><a href="https://buy.stripe.com/28E7sM9dO8IN0Iz3gk3ZK00" class="nav-cta" target="_blank" rel="noopener">Book $10 trial</a></li>
   </ul>
 </nav>
@@ -257,6 +258,51 @@
     </div>
   </section>
 
+  <!-- ============ FREE NOTES ============ -->
+  <section class="section" id="free-notes" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="notes-box" data-reveal>
+        <div>
+          <p class="eyebrow">Free for parents</p>
+          <h2>Free PSLE Science notes, sent straight to your WhatsApp.</h2>
+          <p class="lede">Topic notes written by Mr Yeo for the P5 Science syllabus: digestive system, circulatory system, plant transport, plant reproduction and electrical circuits. No cost, no obligation.</p>
+        </div>
+        <form id="notes-form" class="notes-form" novalidate>
+          <label>Parent's name<input name="name" type="text" autocomplete="name" required placeholder="e.g. Mrs Tan"></label>
+          <label>WhatsApp number<input name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="e.g. 9123 4567"></label>
+          <button class="btn btn-primary" type="submit">Get the free notes <span class="arr">→</span></button>
+          <p class="notes-msg" id="notes-msg" role="status" aria-live="polite"></p>
+          <a class="btn btn-wa notes-wa" id="notes-wa" hidden target="_blank" rel="noopener" href="https://wa.me/6588673474?text=Hi%2C%20please%20send%20me%20the%20free%20PSLE%20Science%20notes">Open WhatsApp to receive them <span class="arr">→</span></a>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script>
+  (function(){
+    var f=document.getElementById('notes-form'); if(!f) return;
+    var msg=document.getElementById('notes-msg'), wa=document.getElementById('notes-wa'), btn=f.querySelector('button');
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var name=f.name.value.trim(), phone=f.phone.value.replace(/[^0-9]/g,'');
+      if(phone.indexOf('65')===0 && phone.length===10) phone=phone.slice(2);
+      if(!name){msg.textContent='Please enter your name.';return;}
+      if(!/^[3689][0-9]{7}$/.test(phone)){msg.textContent='Please enter a valid 8-digit Singapore number.';return;}
+      btn.disabled=true; msg.textContent='Sending...';
+      fetch('https://mathsciencedojo.app.n8n.cloud/webhook/msd-free-notes',{
+        method:'POST',
+        body:new URLSearchParams({name:name,phone:'+65'+phone,source:'website-free-notes'})
+      }).then(function(r){
+        if(!r.ok) throw new Error('bad');
+        msg.textContent='Thank you! Tap below and send the pre-filled message to receive your notes on WhatsApp.';
+        wa.hidden=false; btn.hidden=true;
+      }).catch(function(){
+        msg.textContent='Something went wrong. Please tap below to message us on WhatsApp instead.';
+        wa.hidden=false; btn.disabled=false;
+      });
+    });
+  })();
+  </script>
+
   <!-- ============ FAQ ============ -->
   <section class="section">
     <div class="wrap">
@@ -281,7 +327,7 @@
         </details>
         <details>
           <summary>How do I enquire or book a trial? <span class="plus">+</span></summary>
-          <p class="a">Message Mr Yeo directly on WhatsApp at +65 8867 3474. You'll get a personal reply, not a sales team.</p>
+          <p class="a">Book a $10 trial lesson online with the button at the top of this page, or message Mr Yeo directly on WhatsApp at +65 8867 3474. You'll get a personal reply, not a sales team.</p>
         </details>
       </div>
     </div>

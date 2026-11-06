@@ -443,3 +443,15 @@ footer{border-top:1px solid var(--line);padding:3rem 0 2.2rem;margin-top:clamp(3
   [data-stagger],[data-reveal],.stagger>*{opacity:1!important;transform:none!important}
   html{scroll-behavior:auto}
 }
+
+/* ===== Free notes box ===== */
+.notes-box{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:center;
+  background:var(--paper-2);border:1.5px solid var(--line);border-radius:28px;padding:clamp(1.6rem,4vw,3.2rem)}
+.notes-box h2{margin:.4rem 0 1rem}
+.notes-form{display:grid;gap:.9rem}
+.notes-form label{display:grid;gap:.35rem;font-size:.88rem;font-weight:600;color:var(--pine)}
+.notes-form input{font:inherit;font-weight:400;padding:.85rem 1rem;border:1.5px solid var(--line);border-radius:14px;background:#fff;color:var(--ink)}
+.notes-form input:focus{outline:2px solid var(--gold);outline-offset:1px}
+.notes-msg{min-height:1.3em;font-size:.9rem;color:var(--pine);margin:0}
+.notes-wa[hidden],.notes-form button[hidden]{display:none}
+@media(max-width:820px){.notes-box{grid-template-columns:1fr}}
