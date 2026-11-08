@@ -45,3 +45,5 @@ Primary 6 Science students have improved from failing or weak grades to strong p
 - TikTok: @mathsciencedojo
 
 Last updated: November 2026
+
+- Study Buddy (free tool): https://mathsciencedojo.com/study-buddy.html — upload a photo of a PSLE Maths/Science question and get an Input-Process-Output breakdown without the answer.

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free PSLE Study Buddy — Break Down a Maths or Science Question | MathScienceDojo</title>
+<meta name="description" content="Free Study Buddy: snap a photo of a PSLE Maths or Science question and get an Input-Process-Output breakdown that guides your child without giving the answer.">
+<meta name="author" content="Mr Yeo (Yeo Juan Poh)">
+<link rel="canonical" href="https://mathsciencedojo.com/study-buddy.html">
+<meta property="og:title" content="Study Buddy — MathScienceDojo">
+<meta property="og:description" content="Photo of a question in, a guided breakdown out. No answer given.">
+<meta property="og:url" content="https://mathsciencedojo.com/study-buddy.html">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=9">
+<style>
+.sb-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:1.6rem;max-width:760px}
+.sb-drop{display:block;border:2px dashed var(--line);border-radius:14px;padding:2rem 1rem;text-align:center;cursor:pointer}
+.sb-drop input{display:none}
+.sb-prev{max-width:100%;max-height:320px;border-radius:10px;margin:1rem auto 0;display:none}
+.sb-out{white-space:pre-wrap;line-height:1.7;margin-top:1.2rem;display:none;background:var(--paper);padding:1.2rem;border-radius:12px}
+.sb-status{margin-top:1rem;color:var(--pine)}
+</style>
+</head>
+<body>
+
+<div id="veil"><span class="veil-mark">MathScienceDojo</span></div>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo"><span class="dot"></span>MathScienceDojo</a>
+  <button class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Mr Yeo</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="study-buddy.html" class="active">Study Buddy</a></li>
+    <li><a href="programmes.html">Programmes &amp; Results</a></li>
+    <li><a href="psle-science-open-ended.html">Free Guide</a></li>
+    <li><a href="index.html#parent-feedback">Parent feedback</a></li>
+    <li><a href="index.html#free-notes">Free notes</a></li>
+    <li><a href="https://buy.stripe.com/28E7sM9dO8IN0Iz3gk3ZK00" class="nav-cta" target="_blank" rel="noopener">Book $10 trial</a></li>
+  </ul>
+</nav>
+
+<div id="smooth">
+  <header class="page-hero grid-paper grid-fade">
+    <div class="wrap">
+      <p class="eyebrow">Free tool</p>
+      <h1>Study Buddy: stuck on a question? Snap it.</h1>
+      <p class="lede">Upload a photo of one PSLE Maths or Science question. Study Buddy shows what the question gives, the steps to think through, and what a full-mark answer looks like. It never hands over the answer.</p>
+    </div>
+  </header>
+  <section class="section" style="padding-top:2rem">
+    <div class="wrap">
+      <div class="sb-card">
+        <label class="sb-drop" for="sbfile"><strong>Tap to take or choose a photo</strong><br><small>One question per photo, clearly lit</small>
+          <input type="file" id="sbfile" accept="image/*"></label>
+        <img id="sbprev" class="sb-prev" alt="Your question photo">
+        <button class="btn btn-primary" id="sbgo" style="margin-top:1rem;display:none" type="button">Break it down <span class="arr">→</span></button>
+        <div class="sb-status" id="sbstatus" role="status"></div>
+        <div class="sb-out" id="sbout"></div>
+      </div>
+      <p style="margin-top:1.5rem;max-width:760px">Study Buddy is an AI helper and can make mistakes. Check with your teacher or Mr Yeo. Do not upload photos showing your name or school.</p>
+      <p style="margin-top:1rem"><a class="btn btn-wa" href="https://buy.stripe.com/28E7sM9dO8IN0Iz3gk3ZK00" target="_blank" rel="noopener">Want Mr Yeo to coach your child? Book a $10 trial <span class="arr">→</span></a></p>
+    </div>
+  </section>
+<script>
+(function(){
+var URL_="https://mathsciencedojo.app.n8n.cloud/webhook/msd-study-buddy";
+var f=document.getElementById('sbfile'),prev=document.getElementById('sbprev'),go=document.getElementById('sbgo'),st=document.getElementById('sbstatus'),out=document.getElementById('sbout'),data=null;
+f.addEventListener('change',function(){
+  var file=f.files[0];if(!file)return;
+  out.style.display='none';st.textContent='Preparing photo...';
+  var img=new Image(),r=new FileReader();
+  r.onload=function(){img.onload=function(){
+    var m=1568,s=Math.min(1,m/Math.max(img.width,img.height)),c=document.createElement('canvas');
+    c.width=Math.round(img.width*s);c.height=Math.round(img.height*s);
+    c.getContext('2d').drawImage(img,0,0,c.width,c.height);
+    var u=c.toDataURL('image/jpeg',0.82);data=u.split(',')[1];
+    prev.src=u;prev.style.display='block';go.style.display='inline-flex';st.textContent='';
+  };img.onerror=function(){st.textContent='Could not read that photo. Try another.';};img.src=r.result;};
+  r.readAsDataURL(file);
+});
+go.addEventListener('click',function(){
+  if(!data)return;go.disabled=true;st.textContent='Study Buddy is reading your question...';out.style.display='none';
+  var body='image='+encodeURIComponent(data)+'&mediaType='+encodeURIComponent('image/jpeg');
+  fetch(URL_,{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:body})
+  .then(function(r){return r.json();}).then(function(j){
+    st.textContent='';out.textContent=j.text||j.error||'Something went wrong. Please try again.';out.style.display='block';
+  }).catch(function(){st.textContent='Could not reach Study Buddy. Please try again in a moment.';})
+  .then(function(){go.disabled=false;});
+});
+})();
+</script>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <div class="brand">MathScienceDojo</div>
+        <p class="muted" style="font-size:.9rem;max-width:24em;margin-top:.5rem">Online PSLE Maths &amp; Science tuition for P3–Sec 2, taught personally by Mr Yeo.</p>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Mr Yeo</a></li>
+        <li><a href="programmes.html">Programmes &amp; Results</a></li>
+        <li><a href="psle-science-open-ended.html">Free Guide</a></li>
+        <li><a href="https://wa.me/6588673474" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="mailto:mathsciencedojo@gmail.com">Email</a></li>
+      </ul>
+      <p class="fine">© <span id="yr">2026</span> MathScienceDojo Pte. Ltd. · Singapore · @mathsciencedojo on Instagram &amp; TikTok</p>
+    </div>
+  </footer>
+
+</div>
+<div id="scroll-spacer"></div>
+
+<a class="wa-float" href="https://wa.me/6588673474" target="_blank" rel="noopener" aria-label="WhatsApp Mr Yeo">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.7l.4-.5c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2.2-.2 3.7a12 12 0 0 0 4.6 4.3c1.8.9 2.6.9 3.5.8.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.1-.5-.2Z"/></svg>
+</a>
+
+<script src="main.js?v=5"></script>
+</body>
+</html>
