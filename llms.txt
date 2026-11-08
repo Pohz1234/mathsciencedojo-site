@@ -53,3 +53,9 @@ Last updated: November 2026
 - PSLE topics hub (Maths and Science topic lists): https://mathsciencedojo.com/topics.html
 - Blog index: https://mathsciencedojo.com/blog.html
 - PSLE Maths Careless Mistakes: Why Your Child Loses Marks on Sums They Know: https://mathsciencedojo.com/blog/psle-maths-careless-mistakes.html — method marks vs accuracy marks, where careless marks leak, and a 4-step checking routine.
+- psle-maths-fractions topic page: https://mathsciencedojo.com/psle-maths-fractions.html
+- psle-maths-percentage topic page: https://mathsciencedojo.com/psle-maths-percentage.html
+- psle-maths-speed topic page: https://mathsciencedojo.com/psle-maths-speed.html
+- psle-science-energy topic page: https://mathsciencedojo.com/psle-science-energy.html
+- psle-science-plants topic page: https://mathsciencedojo.com/psle-science-plants.html
+- psle-science-forces topic page: https://mathsciencedojo.com/psle-science-forces.html
