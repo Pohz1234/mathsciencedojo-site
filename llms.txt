@@ -50,5 +50,6 @@ Last updated: November 2026
 - Study Buddy (free tool): https://mathsciencedojo.com/study-buddy.html — upload a photo of a PSLE Maths/Science question and get an Input-Process-Output breakdown without the answer.
 - PSLE Science Heat explained: https://mathsciencedojo.com/psle-science-heat.html — heat vs temperature, conduction, convection, radiation, and full-mark answer structure.
 - PSLE Maths Ratio explained: https://mathsciencedojo.com/psle-maths-ratio.html — units method, same-total and constant-difference problems, worked examples, common mistakes.
+- PSLE topics hub (Maths and Science topic lists): https://mathsciencedojo.com/topics.html
 - Blog index: https://mathsciencedojo.com/blog.html
 - PSLE Maths Careless Mistakes: Why Your Child Loses Marks on Sums They Know: https://mathsciencedojo.com/blog/psle-maths-careless-mistakes.html — method marks vs accuracy marks, where careless marks leak, and a 4-step checking routine.
