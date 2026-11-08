@@ -524,3 +524,19 @@ footer{border-top:1px solid var(--line);padding:3rem 0 2.2rem;margin-top:clamp(3
 .tcard2 blockquote::before{content:"\201C";color:var(--gold);font-size:1.5em;line-height:0;margin-right:.1em}
 .feedback-dark .t-note{color:var(--sage-soft)}
 @media(max-width:900px){.tgrid{grid-template-columns:1fr}.tcard2,.tcard2:nth-child(n+4){grid-column:auto}}
+
+.home-about{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+@media(max-width:820px){.home-about{grid-template-columns:1fr}}
+
+@media(max-width:700px){
+  .compare:not(.rates){min-width:0}
+  .compare:not(.rates) thead{display:none}
+  .compare:not(.rates),.compare:not(.rates) tbody,.compare:not(.rates) tr,.compare:not(.rates) th,.compare:not(.rates) td{display:block;width:100%}
+  .compare:not(.rates) tbody tr{padding:1rem 1.1rem;border-bottom:1px solid var(--line)}
+  .compare:not(.rates) tbody tr:last-child{border-bottom:0}
+  .compare:not(.rates) tbody th{width:100%;padding:0 0 .6rem;border:0;font-family:var(--font-mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#5C6B62}
+  .compare:not(.rates) td{padding:.55rem .8rem;border:0;border-radius:10px;margin-bottom:.4rem}
+  .compare:not(.rates) td::before{content:attr(data-label);display:block;font-family:var(--font-mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;opacity:.65;margin-bottom:.15rem}
+  .compare:not(.rates) tbody td:nth-child(3){background:var(--paper-2)}
+  .table-wrap{overflow-x:visible}
+}

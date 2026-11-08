@@ -148,8 +148,7 @@
     .querySelectorAll("[data-reveal], .stagger, .hero, .page-hero, [data-count-group]")
     .forEach((el) => io.observe(el));
 
-  /* numbers are in the HTML for crawlers/no-JS; reset to 0 here so they can count up */
-  document.querySelectorAll("[data-count]").forEach((el) => { if (!reduceMotion) el.textContent = "0"; });
+  /* numbers live in the HTML (crawlers, no-JS); countUp restarts from 0 when scrolled into view */
 
   /* ---------- count up ---------- */
   const counted = new WeakSet();
@@ -166,6 +165,7 @@
       if (p < 1) requestAnimationFrame(tick);
     }
     if (reduceMotion) { el.textContent = end; return; }
+    el.textContent = 0;
     requestAnimationFrame(tick);
   }
 
