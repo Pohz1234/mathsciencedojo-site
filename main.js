@@ -148,6 +148,9 @@
     .querySelectorAll("[data-reveal], .stagger, .hero, .page-hero, [data-count-group]")
     .forEach((el) => io.observe(el));
 
+  /* numbers are in the HTML for crawlers/no-JS; reset to 0 here so they can count up */
+  document.querySelectorAll("[data-count]").forEach((el) => { if (!reduceMotion) el.textContent = "0"; });
+
   /* ---------- count up ---------- */
   const counted = new WeakSet();
   function countUp(el) {
