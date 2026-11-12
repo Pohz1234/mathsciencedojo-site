@@ -54,6 +54,7 @@ Last updated: November 2026
 - Blog index: https://mathsciencedojo.com/blog.html
 - PSLE Maths Careless Mistakes: Why Your Child Loses Marks on Sums They Know: https://mathsciencedojo.com/blog/psle-maths-careless-mistakes.html — method marks vs accuracy marks, where careless marks leak, and a 4-step checking routine.
 - How PSLE Science Papers Are Marked: Why Your Child Loses Marks Even When They Know the Concept: https://mathsciencedojo.com/blog/how-psle-science-papers-are-marked.html — how mark schemes tick off keyword ideas, and four ways correct understanding still loses marks.
+- PSLE Science Answering Technique: The 3-Part Open-Ended Answer: https://mathsciencedojo.com/blog/psle-science-answering-technique.html — the 3-part open-ended answer (what happens, keyword reason, link to the question) with a worked example.
 - psle-maths-fractions topic page: https://mathsciencedojo.com/psle-maths-fractions.html
 - psle-maths-percentage topic page: https://mathsciencedojo.com/psle-maths-percentage.html
 - psle-maths-speed topic page: https://mathsciencedojo.com/psle-maths-speed.html

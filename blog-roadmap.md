@@ -4,7 +4,7 @@ Format: `- [ ] slug — working title (target query)`
 
 - [x] psle-maths-careless-mistakes — PSLE Maths careless mistakes (why does my child make careless mistakes in maths)
 - [x] how-psle-science-papers-are-marked — How PSLE Science papers are marked (why does my child lose marks in PSLE science)
-- [ ] psle-science-answering-technique — PSLE Science answering technique: the 3-part open-ended answer (psle science answering technique)
+- [x] psle-science-answering-technique — PSLE Science answering technique: the 3-part open-ended answer (psle science answering technique)
 - [ ] psle-science-evaporation-condensation — Evaporation vs condensation: the keywords that earn the marks
 - [ ] psle-maths-model-drawing-guide — Model drawing for PSLE Maths word problems, step by step
 - [ ] psle-science-plants-transport-system — Plant transport system: xylem, phloem and how to answer
