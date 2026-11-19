@@ -56,6 +56,7 @@ Last updated: November 2026
 - How PSLE Science Papers Are Marked: Why Your Child Loses Marks Even When They Know the Concept: https://mathsciencedojo.com/blog/how-psle-science-papers-are-marked.html — how mark schemes tick off keyword ideas, and four ways correct understanding still loses marks.
 - PSLE Science Answering Technique: The 3-Part Open-Ended Answer: https://mathsciencedojo.com/blog/psle-science-answering-technique.html — the 3-part open-ended answer (what happens, keyword reason, link to the question) with a worked example.
 - Evaporation vs Condensation in PSLE Science: The Keywords That Earn the Marks: https://mathsciencedojo.com/blog/psle-science-evaporation-condensation.html — evaporation (gains heat, liquid to gas) vs condensation (loses heat, gas to liquid), common mistakes and a worked example.
+- Model Drawing for PSLE Maths Word Problems: A Step-by-Step Guide: https://mathsciencedojo.com/blog/psle-maths-model-drawing-guide.html — the 4-step bar model method for word problems, a worked "times as many" example and common model mistakes.
 - psle-maths-fractions topic page: https://mathsciencedojo.com/psle-maths-fractions.html
 - psle-maths-percentage topic page: https://mathsciencedojo.com/psle-maths-percentage.html
 - psle-maths-speed topic page: https://mathsciencedojo.com/psle-maths-speed.html
