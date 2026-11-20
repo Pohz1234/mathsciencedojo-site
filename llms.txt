@@ -63,3 +63,4 @@ Last updated: November 2026
 - psle-science-energy topic page: https://mathsciencedojo.com/psle-science-energy.html
 - psle-science-plants topic page: https://mathsciencedojo.com/psle-science-plants.html
 - psle-science-forces topic page: https://mathsciencedojo.com/psle-science-forces.html
+- PSLE Maths Area and Perimeter explained: https://mathsciencedojo.com/psle-maths-area-perimeter.html — triangles, composite figures, circles and semicircles, worked examples, a tricky cut-out question, common mistakes.
