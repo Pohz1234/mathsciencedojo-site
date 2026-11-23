@@ -57,6 +57,7 @@ Last updated: November 2026
 - PSLE Science Answering Technique: The 3-Part Open-Ended Answer: https://mathsciencedojo.com/blog/psle-science-answering-technique.html — the 3-part open-ended answer (what happens, keyword reason, link to the question) with a worked example.
 - Evaporation vs Condensation in PSLE Science: The Keywords That Earn the Marks: https://mathsciencedojo.com/blog/psle-science-evaporation-condensation.html — evaporation (gains heat, liquid to gas) vs condensation (loses heat, gas to liquid), common mistakes and a worked example.
 - Model Drawing for PSLE Maths Word Problems: A Step-by-Step Guide: https://mathsciencedojo.com/blog/psle-maths-model-drawing-guide.html — the 4-step bar model method for word problems, a worked "times as many" example and common model mistakes.
+- Plant Transport System in PSLE Science: Xylem, Phloem and How to Answer: https://mathsciencedojo.com/blog/psle-science-plants-transport-system.html — xylem (water and mineral salts up) vs phloem (food to other parts), with a worked celery-in-red-water example.
 - psle-maths-fractions topic page: https://mathsciencedojo.com/psle-maths-fractions.html
 - psle-maths-percentage topic page: https://mathsciencedojo.com/psle-maths-percentage.html
 - psle-maths-speed topic page: https://mathsciencedojo.com/psle-maths-speed.html

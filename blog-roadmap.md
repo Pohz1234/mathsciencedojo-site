@@ -7,7 +7,7 @@ Format: `- [ ] slug — working title (target query)`
 - [x] psle-science-answering-technique — PSLE Science answering technique: the 3-part open-ended answer (psle science answering technique)
 - [x] psle-science-evaporation-condensation — Evaporation vs condensation: the keywords that earn the marks
 - [x] psle-maths-model-drawing-guide — Model drawing for PSLE Maths word problems, step by step
-- [ ] psle-science-plants-transport-system — Plant transport system: xylem, phloem and how to answer
+- [x] psle-science-plants-transport-system — Plant transport system: xylem, phloem and how to answer
 - [ ] psle-maths-ratio-tricks — Ratio questions in PSLE Maths: the repeated-identity method
 - [ ] psle-science-electricity-circuits — Electrical circuits: open vs closed, series vs parallel, how to explain
 - [ ] psle-maths-fractions-word-problems — Fractions word problems that trip up P6 students
