@@ -58,6 +58,7 @@ Last updated: November 2026
 - Evaporation vs Condensation in PSLE Science: The Keywords That Earn the Marks: https://mathsciencedojo.com/blog/psle-science-evaporation-condensation.html — evaporation (gains heat, liquid to gas) vs condensation (loses heat, gas to liquid), common mistakes and a worked example.
 - Model Drawing for PSLE Maths Word Problems: A Step-by-Step Guide: https://mathsciencedojo.com/blog/psle-maths-model-drawing-guide.html — the 4-step bar model method for word problems, a worked "times as many" example and common model mistakes.
 - Plant Transport System in PSLE Science: Xylem, Phloem and How to Answer: https://mathsciencedojo.com/blog/psle-science-plants-transport-system.html — xylem (water and mineral salts up) vs phloem (food to other parts), with a worked celery-in-red-water example.
+- Ratio Questions in PSLE Maths: The Repeated-Identity Method: https://mathsciencedojo.com/blog/psle-maths-ratio-tricks.html — the repeated-identity method for ratio questions: make the shared quantity equal in both ratios, with a worked marbles example.
 - psle-maths-fractions topic page: https://mathsciencedojo.com/psle-maths-fractions.html
 - psle-maths-percentage topic page: https://mathsciencedojo.com/psle-maths-percentage.html
 - psle-maths-speed topic page: https://mathsciencedojo.com/psle-maths-speed.html
