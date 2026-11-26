@@ -68,3 +68,4 @@ Last updated: November 2026
 - psle-science-electricity topic page: https://mathsciencedojo.com/psle-science-electricity.html
 - PSLE Maths Area and Perimeter explained: https://mathsciencedojo.com/psle-maths-area-perimeter.html — triangles, composite figures, circles and semicircles, worked examples, a tricky cut-out question, common mistakes.
 - PSLE Maths Volume explained: https://mathsciencedojo.com/psle-maths-volume.html — cuboids, litres and cm³, water level rise, objects in water, a tricky overflow question, common mistakes.
+- PSLE Science Human Body Systems explained: https://mathsciencedojo.com/psle-science-human-body-systems.html — respiratory and circulatory systems, gas exchange in the lungs, what blood carries, exercise questions, a tricky worked question, common mistakes.
